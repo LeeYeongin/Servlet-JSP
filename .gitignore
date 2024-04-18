@@ -47,5 +47,5 @@ release.properties
 dependency-reduced-pom.xml
 
 .metadata/*
-*/META-INF/*
-*/WEB-INF/*
+MustHaveJSP/src/main/webapp/META-INF/*
+MustHaveJSP/src/main/webapp/WEB-INF/*
