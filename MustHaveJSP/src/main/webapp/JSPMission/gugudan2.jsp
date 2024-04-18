@@ -27,10 +27,7 @@ String result;
 					/* out.print(String.format("%d * %d = %d", i+k, j,(i+k)*j)); */
 					out.print(String.format("%s",result));
 					if(k < col-1)
-						if(result.length()<10)
-							out.print("&nbsp".repeat(7));
-						else
-							out.print("&nbsp".repeat(5));
+							out.print("&nbsp".repeat(15-result.length()));
 					else
 						out.print("<br/>");
 				}
@@ -38,7 +35,7 @@ String result;
 			out.print("<br/>");
 		}
 	}catch(Exception e){
-		out.print("단을 입력해주세요");
+		out.print("col(열)을 입력해주세요");
 	}
 %>
 </body>
