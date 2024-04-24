@@ -1,3 +1,4 @@
+<%@page import="utils.JSFunction"%>
 <%@page import="membership.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -41,17 +42,19 @@
 	} else { // 로그인된 상태
 		// 방법1
 		// MemberDTO dto = (MemberDTO)session.getAttribute("UserName");
+		//response.sendRedirect("../08Board/List.jsp");
+		JSFunction.alertLocation(session.getAttribute("UserName")+"님 로그인되었습니다.", "../08Board/List.jsp", out);
 	%>
 <%-- 	<%= 
 		// 방법1
 		//dto.getName() ;
 		%>  --%>
-		<%= 
+<%-- 		<%= 
 		// 방법2
 		session.getAttribute("UserName")
 		%>
 		회원님, 로그인하셨습니다. <br/>
-		<a href="Logout.jsp">[로그아웃]</a>
+		<a href="Logout.jsp">[로그아웃]</a> --%>
 	<%
 	}
 	%>
