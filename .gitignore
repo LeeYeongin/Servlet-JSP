@@ -49,3 +49,4 @@ dependency-reduced-pom.xml
 .metadata/*
 MustHaveJSP/src/main/webapp/META-INF/*
 MustHaveJSP/src/main/webapp/WEB-INF/*
+/.metadata/
