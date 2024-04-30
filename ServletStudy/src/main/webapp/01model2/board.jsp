@@ -8,19 +8,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1" style="border-collapse: collapse;">
+		<table border="1" style="border-collapse: collapse;">
 	<tr>
-		<th>아이디</th>
-		<th>비밀번호</th>
-		<th>이름</th>
-		<th>등록일</th>
+		<th>num</th>
+		<th>title</th>
+		<th>content</th>
+		<th>postdate</th>
+		<th>visitcount</th>
 	</tr>
 	 <c:forEach items="${list}" var="item">
 		<tr>
-			<td>${item.id}</td>
-			<td>${item.pass}</td>
-			<td>${item.name}</td>
-			<td>${item.regidate}</td>
+			<td>${item.num}</td>
+			<td>${item.title}</td>
+			<td>${item.content}</td>
+			<td>${item.postdate}</td>
+			<td style="text-align: right">${item.visitcount}</td>
 		</tr>
      </c:forEach>
 	</table>

@@ -8,8 +8,7 @@ public class BoardDTO {
 	private String id;
 	private java.sql.Date postdate;
 	private String visitcount;
-	private String name;
-	
+
 	// 게터/세터
 	public String getNum() {
 		return num;
@@ -46,11 +45,5 @@ public class BoardDTO {
 	}
 	public void setVisitcount(String visitcount) {
 		this.visitcount = visitcount;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
 	}
 }
